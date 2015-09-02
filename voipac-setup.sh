@@ -9,12 +9,12 @@ then
 	TMPRETVAL=$(echo $?)
 	TMPPRINT=""
 
-	if [ ${RETVAL} -eq 0 ]
+	if [ ${TMPRETVAL} -eq 0 ]
 	then
 		TMPPRINT="already present"
 	fi
 
-	if [ ${RETVAL} -eq 1 ]
+	if [ ${TMPRETVAL} -eq 1 ]
 	then
 		echo "\n${LAYER_VOIPAC_STRING}" >> ${LAYERS_DIR}/bblayers.conf
 		TMPPRINT="added"
