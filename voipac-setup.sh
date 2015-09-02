@@ -1,6 +1,6 @@
 #!/bin/sh
 
-LAYERS_DIR=../.././sources/base/conf/
+LAYERS_DIR=./sources/base/conf/
 LAYER_VOIPAC_STRING="BBLAYERS += \"\${BSPDIR}/sources/meta-fsl-arm-voipac\""
 
 if [ -w ${LAYERS_DIR}/bblayers.conf ]
