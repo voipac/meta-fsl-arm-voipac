@@ -47,17 +47,8 @@ To get the BSP you need to have `repo` installed and use it as:
     MACHINE=<machine name> source setup-environment build-dir
     MACHINE=<machine name> bitbake core-image-base
 
-## Setup and Build for X11
-    MACHINE=<machine name> source fsl-setup-release.sh -b build-x11 -e x11
-
-## Setup and Build for FB 
-    MACHINE=<machine name> source fsl-setup-release.sh -b build-fb -e fb
-
-## Setup and Build for Wayland 
-    MACHINE=<machine name> source fsl-setup-release.sh -b build-wayland -e wayland
-
-## Setup and Build for DirectFB
-    MACHINE=<machine name> source fsl-setup-release.sh -b build-dfb -e dfb
+## Setup and Build for Toolchain    
+    MACHINE=<machine name> bitbake core-image-base -c populate_sdk
     
         
     
