@@ -16,7 +16,7 @@ then
 
 	if [ ${TMPRETVAL} -eq 1 ]
 	then
-		echo "\n${LAYER_VOIPAC_STRING}" >> ${LAYERS_DIR}/bblayers.conf
+		echo "${LAYER_VOIPAC_STRING}" >> ${LAYERS_DIR}/bblayers.conf
 		TMPPRINT="added"
 	fi
 
