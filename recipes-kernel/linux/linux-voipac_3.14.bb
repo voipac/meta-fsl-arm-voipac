@@ -12,7 +12,7 @@ DEPENDS += "lzop-native bc-native"
 
 SRCBRANCH = "3.14-1.0.x-mx6-tinyrex"
 LOCALVERSION = "-yocto"
-SRCREV = "28a6ec7b6b4aca857a71ec70218c9b647d325f28"
+SRCREV = "3b27c0fa73876d6cdf64b3d05a57e239fb6d2176"
 KERNEL_SRC ?= "git://github.com/voipac/linux-fslc.git;protocol=git"
 SRC_URI = "${KERNEL_SRC};branch=${SRCBRANCH} file://defconfig"
 
