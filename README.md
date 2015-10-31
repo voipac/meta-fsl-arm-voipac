@@ -43,12 +43,16 @@ To get the BSP you need to have `repo` installed and use it as:
     imx6s-tinyrex
     imx6q-tinyrex
     
-## Setup and Build for Console image
+## Setup and Build Console image
     MACHINE=<machine name> source setup-environment build-dir
     MACHINE=<machine name> bitbake core-image-base
 
-## Setup and Build for Toolchain    
+## Setup and Build Toolchain    
     MACHINE=<machine name> bitbake core-image-base -c populate_sdk
+    
+## Setup and Build FSL GUI image
+    MACHINE=<machine name> source fsl-setup-release.sh -b build-x11 -e x11
+    MACHINE=<machine name> bitbake fsl-image-gui
     
         
     
