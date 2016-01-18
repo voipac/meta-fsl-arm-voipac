@@ -12,10 +12,10 @@ DEPENDS += "lzop-native bc-native"
 
 SRCBRANCH = "3.14-1.0.x-mx6-tinyrex"
 LOCALVERSION = "-yocto"
-SRCREV = "df9a2f34a8a6507f0b5dbe71e2fa4c6f1520454a"
+SRCREV = "a6c2566e40724b1103bfcf7ab536755b14837f3e"
 KERNEL_SRC ?= "git://github.com/voipac/linux-fslc.git;protocol=git"
 SRC_URI = "${KERNEL_SRC};branch=${SRCBRANCH} file://defconfig"
 
 DEFAULT_PREFERENCE = "1"              
 
-COMPATIBLE_MACHINE = "(mx6|imx6q-tinyrex|imx6dl-tinyrex|imx6s-tinyrex)"
+COMPATIBLE_MACHINE = "(mx6|imx6s-tinyrexlite|imx6s-tinyrexbasic|imx6d-tinyrexpro|imx6q-tinyrexmax|imx6q-tinyrex|imx6dl-tinyrex|imx6s-tinyrex)"
