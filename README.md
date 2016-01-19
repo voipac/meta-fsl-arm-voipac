@@ -40,10 +40,10 @@ To get the BSP you need to have `repo` installed and use it as:
     cd ~/workdir/imx6/yocto/fsl-release-bsp
 
 ## Supported machines <machine name>
-    imx6s-tinyrexlite
-    imx6s-tinyrexbasic
-	imx6d-tinyrexpro
-	imx6q-tinyrexmax
+    imx6-tinyrexlite
+    imx6-tinyrexbasic
+	imx6-tinyrexpro
+	imx6-tinyrexmax
     imx6s-tinyrex (prototype)
     imx6q-tinyrex (prototype)
     
