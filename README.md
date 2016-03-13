@@ -46,6 +46,9 @@ To get the BSP you need to have `repo` installed and use it as:
 	imx6-tinyrexmax
     imx6s-tinyrex (prototype)
     imx6q-tinyrex (prototype)
+    imx6-rexbasic
+    imx6-rexpro
+    imx6dl-rex (prototype)
     
 ## Setup and Build Console image
     MACHINE=<machine name> source setup-environment build-dir
