@@ -1,0 +1,2 @@
+echo 2 > /sys/bus/i2c/devices/1-0036/ov5647_mode
+gst-launch-1.0 v4l2src device="/dev/video1" num-buffers=800 ! video/x-bayer,width=1920,height=1080,framerate=30/1 ! queue ! bayer2rgb ! videoconvert ! autovideosink

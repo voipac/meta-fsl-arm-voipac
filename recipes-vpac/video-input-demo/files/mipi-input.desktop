@@ -1,0 +1,9 @@
+[Desktop Entry]   
+Name=MIPI Input Test
+Comment=RPI camera (Process 800 frames)
+Exec=/usr/bin/mipi-input
+Icon=video-player 
+Terminal=true
+Type=Application  
+StartupNotify=true
+Categories=GTK;AudioVideo;Audio;Player;
