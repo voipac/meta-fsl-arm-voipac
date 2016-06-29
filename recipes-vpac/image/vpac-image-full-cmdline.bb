@@ -10,26 +10,26 @@ IMAGE_FEATURES += " \
 
 IMAGE_INSTALL = " \
     packagegroup-core-boot \
-	packagegroup-core-buildessential \
-	packagegroup-core-device-devel \
+    packagegroup-core-buildessential \
+    packagegroup-core-device-devel \
     packagegroup-core-full-cmdline \
-	packagegroup-core-sdk \
-	packagegroup-core-ssh-openssh \
-	packagegroup-core-tools-debug \
-	packagegroup-core-tools-profile \
-	packagegroup-core-tools-testapps \
+    packagegroup-core-sdk \
+    packagegroup-core-ssh-openssh \
+    packagegroup-core-tools-debug \
+    packagegroup-core-tools-profile \
+    packagegroup-core-tools-testapps \
     packagegroup-fsl-gstreamer \
     packagegroup-fsl-gstreamer-full \
-	packagegroup-fslc-gstreamer1.0-full \
+    packagegroup-fslc-gstreamer1.0-full \
     packagegroup-fsl-tools-gpu \
     packagegroup-fsl-tools-gpu-external \
     packagegroup-fsl-tools-testapps \
     packagegroup-fsl-tools-benchmark \
-	kernel-devsrc \
-	kernel-modules \
+    kernel-dev \
+    kernel-modules \
     ${CORE_IMAGE_EXTRA_INSTALL} \
 "
 
 inherit core-image
 
-IMAGE_ROOTFS_EXTRA_SPACE_append += "+ 3000000" 
+IMAGE_ROOTFS_EXTRA_SPACE_append += "+ 500000" 
