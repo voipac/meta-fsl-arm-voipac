@@ -27,6 +27,7 @@ IMAGE_INSTALL = " \
     packagegroup-fsl-tools-benchmark \
     kernel-dev \
     kernel-modules \
+    openssh-sftp-server \
     ${CORE_IMAGE_EXTRA_INSTALL} \
 "
 
