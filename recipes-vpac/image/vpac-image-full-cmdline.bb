@@ -18,8 +18,6 @@ IMAGE_INSTALL = " \
     packagegroup-core-tools-debug \
     packagegroup-core-tools-profile \
     packagegroup-core-tools-testapps \
-    packagegroup-fsl-gstreamer \
-    packagegroup-fsl-gstreamer-full \
     packagegroup-fsl-tools-gpu \
     packagegroup-fsl-tools-gpu-external \
     packagegroup-fsl-tools-testapps \
