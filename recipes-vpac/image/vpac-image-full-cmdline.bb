@@ -20,7 +20,6 @@ IMAGE_INSTALL = " \
     packagegroup-core-tools-testapps \
     packagegroup-fsl-gstreamer \
     packagegroup-fsl-gstreamer-full \
-    packagegroup-fslc-gstreamer1.0-full \
     packagegroup-fsl-tools-gpu \
     packagegroup-fsl-tools-gpu-external \
     packagegroup-fsl-tools-testapps \
