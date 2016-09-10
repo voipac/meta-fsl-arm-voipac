@@ -1,0 +1,4 @@
+if [ -r /home/root/multimedia/trailer_480p.mov ]
+then 
+  gst-play /home/root/multimedia/trailer_480p.mov
+fi

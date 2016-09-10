@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Video Playback Test
+Comment=Play trailer video
+Exec=/usr/bin/video-playback
+Icon=video-player 
+Terminal=true
+Type=Application  
+StartupNotify=true
+Categories=GTK;AudioVideo;Audio;Player;
