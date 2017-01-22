@@ -10,9 +10,9 @@ require recipes-kernel/linux/linux-dtb.inc
 
 DEPENDS += "lzop-native bc-native"
 
-SRCBRANCH = "4.1-1.0.x-imx-rex"
+SRCBRANCH = "4.1-2.0.x-imx-rex"
 LOCALVERSION = "-yocto"
-SRCREV = "818b981e78a41ca91ddfff5e61291dd0d6380eb4"
+SRCREV = "ba153643947e6906bc8659ba77ffa17f295afeb6"
 KERNEL_SRC ?= "git://github.com/voipac/linux-fslc.git;protocol=git"
 SRC_URI = "${KERNEL_SRC};branch=${SRCBRANCH} file://defconfig"
 
