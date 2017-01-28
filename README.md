@@ -14,7 +14,7 @@ To get the BSP you need to have `repo` installed and use it as:
 ## Download the BSP Yocto Project Environment
     mkdir -pv ~/workdir/imx6/yocto/fsl-release-bsp
     cd ~/workdir/imx6/yocto/fsl-release-bsp
-    repo init -u git://git.freescale.com/imx/fsl-arm-yocto-bsp.git -b imx-3.14.28-1.0.1_patch
+    repo init -u git://git.freescale.com/imx/fsl-arm-yocto-bsp.git -b imx-4.1-krogoth
 
 ## Add tinyrex support  
     mkdir -pv .repo/local_manifests/
@@ -44,14 +44,18 @@ To get the BSP you need to have `repo` installed and use it as:
     imx6-tinyrexbasic
 	imx6-tinyrexpro
 	imx6-tinyrexmax
+	imx6-tinyrexmax4g
 	imx6-tinyrexultra
-    imx6s-tinyrex (prototype)
-    imx6q-tinyrex (prototype)
     imx6-rexbasic
     imx6-rexpro
     imx6-rexultra
-    imx6dl-rex (prototype)
-    
+
+## Supported distros <distro name>
+	fsl-imx-x11
+	fsl-imx-wayland
+	fsl-imx-xwayland
+	fsl-imx-fb
+
 ## Setup and Build Console image
     MACHINE=<machine name> source setup-environment build-dir
     MACHINE=<machine name> bitbake core-image-base
@@ -60,8 +64,6 @@ To get the BSP you need to have `repo` installed and use it as:
     MACHINE=<machine name> bitbake core-image-base -c populate_sdk
     
 ## Setup and Build FSL GUI image
-    MACHINE=<machine name> source fsl-setup-release.sh -b build-x11 -e x11
-    MACHINE=<machine name> bitbake fsl-image-gui
-    
-        
-    
+    DISTRO=<distro name> MACHINE=<machine name> source fsl-setup-release.sh -b build-x11
+    DISTRO=<distro name> MACHINE=<machine name> bitbake fsl-image-gui
+
