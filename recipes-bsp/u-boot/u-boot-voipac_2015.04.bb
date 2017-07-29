@@ -10,7 +10,7 @@ PROVIDES += "u-boot"
 PV = "v2015.04"
 
 SRCBRANCH = "uboot-imx-v2015.04"
-SRCREV = "3e8754eed4836616aae08be29e21d8747bc66ce0"
+SRCREV = "43a55065af6db10c6cac582e6f2175a2f002a6aa"
 UBOOT_SRC ?= "git://github.com/voipac/uboot-imx.git;protocol=git"
 SRC_URI = "${UBOOT_SRC};branch=${SRCBRANCH}"
 
